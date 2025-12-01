@@ -329,3 +329,20 @@ body {
     padding-top: 1rem;
     border-top: 1px solid var(--border);
 }
+
+
+.pending_appointments {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.appointment {
+    background: #f8fafc;
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
