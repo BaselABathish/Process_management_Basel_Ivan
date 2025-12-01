@@ -68,10 +68,16 @@
         </div>
 
         <div class="appointment-section">
-            <a href="mailto:ghouse@ppth.edu?subject=Not%20Lupus%20-%20Appointment%20Request&body=Dear%20Dr.%20House%0A%0AI%20have%20a%20set%20of%20symptoms%20that%20are%20idiopathic,%20fascinating,%20and%20probably%20fatal.%20No%20other%20doctor%20can%20figure%20it%20out.%0A%0AMy%20symptoms%20are%3A%0A%0A1.%20%5BStart%20with%20something%20irrelevant%20you're%20lying%20about%5D%0A2.%20%5BThe%20actual%20key%20symptom%20you%20think%20is%20unimportant%5D%0A3.%20%5BSomething%20that%20only%20happens%20on%20Tuesdays%5D%0A%0AI%20have%20already%20tried%20antibiotics.%20It%20is%20not%20lupus.%0A%0APatient%20%5BYOUR%20NAME%5D">
-                Request Appointment
-            </a>
+            <button onclick="a()">Request appointment</button>
         </div>
 </main>
+
+<script>
+    function a(){
+        const msg = `You've requested an appointment with Dr. Gregory House on ${document.getElementById('appointment_date').value}`
+        alert(msg)
+    }
+
+</script>
 </body>
 </html>
