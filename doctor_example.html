@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Dr. Gregory House</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<header class="header">
+    <div class="logo">MedConnect</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="account.html" class="nav-link">My Account</a></li>
+            <li><a href="symptoms.html" class="nav-link">Describe Symptoms</a></li>
+        </ul>
+    </nav>
+    <a href="index.html" class="logout">Logout</a>
+</header>
+
+<main class="main-content">
+    <div class="doctor-profile">
+        <div class="doctor-header">
+            <div class="doctor-avatar">
+                <img src="https://via.placeholder.com/150" alt="Dr. Gregory House">
+            </div>
+            <div class="doctor-intro">
+                <h1>Dr. Gregory House</h1>
+                <p class="specialty">Diagnostic Medicine, Nephrology, Infectious Disease</p>
+                <div class="match-badge">95% Match</div>
+            </div>
+        </div>
+
+        <div class="doctor-details-section">
+            <h2>About Dr. House</h2>
+            <p>Dr. Gregory House is a world-renowned diagnostic genius and the Head of Diagnostic Medicine at Princeton-Plainsboro Teaching Hospital.</p>
+
+            <div class="info-group">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> Department of Diagnostic Medicine, Princeton-Plainsboro Teaching Hospital, 1 Hospital Drive, Princeton, NJ 08540</p>
+                    <p><strong>Phone:</strong> (609) 555-0100</p>
+                    <p><strong>Email:</strong> ghhouse@ppth.edu</p>
+                </div>
+            </div>
+
+            <div class="info-group">
+                <h3>Education & Credentials</h3>
+                <ul>
+                    <li>MD, Johns Hopkins University School of Medicine</li>
+                    <li>Residency in Internal Medicine, Johns Hopkins Hospital</li>
+                    <li>Fellowship in Nephrology and Infectious Disease</li>
+                    <li>Board Certified in Diagnostic Medicine</li>
+                </ul>
+            </div>
+
+            <div class="info-group">
+                <h3>Clinic & Office Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 9:00 - 20:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+        <label for="appointment_date">Preferred appointment date</label>
+        <input type="date" id="appointment_date" name="appointment_date">
+        </div>
+
+        <div class="appointment-section">
+            <a href="mailto:ghouse@ppth.edu?subject=Not%20Lupus%20-%20Appointment%20Request&body=Dear%20Dr.%20House%0A%0AI%20have%20a%20set%20of%20symptoms%20that%20are%20idiopathic,%20fascinating,%20and%20probably%20fatal.%20No%20other%20doctor%20can%20figure%20it%20out.%0A%0AMy%20symptoms%20are%3A%0A%0A1.%20%5BStart%20with%20something%20irrelevant%20you're%20lying%20about%5D%0A2.%20%5BThe%20actual%20key%20symptom%20you%20think%20is%20unimportant%5D%0A3.%20%5BSomething%20that%20only%20happens%20on%20Tuesdays%5D%0A%0AI%20have%20already%20tried%20antibiotics.%20It%20is%20not%20lupus.%0A%0APatient%20%5BYOUR%20NAME%5D">
+                Request Appointment
+            </a>
+        </div>
+</main>
 </body>
 </html>

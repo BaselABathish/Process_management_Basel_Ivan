@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Find Doctors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<header class="header">
+    <div class="logo">MedConnect</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="account.html" class="nav-link">My Account</a></li>
+            <li><a href="symptoms.html" class="nav-link">Describe Symptoms</a></li>
+        </ul>
+    </nav>
+    <a href="index.html" class="logout">Logout</a>
+</header>
+
+<main class="main-content">
+    <div class="page-header">
+        <h1>Recommended Doctors</h1>
+        <p>Based on your symptoms, we've found these specialists who can help you.</p>
+    </div>
+
+    <div class="results">
+        <div class="doctor-list">
+            <div class="doctor-card">
+                <div class="doctor-info">
+                    <div class="doctor-main-info">
+                        <h3>Dr. Gregory House</h3>
+                        <div class="match-score">Match: 95%</div>
+                        <div class="availability_on_platform">THIS IS A FLAG OF TRUE/FALSE THAT INDICATS IF A DOCTOR HAS AN ACCOUNT ON OUR PLATFORM</div>
+                    </div>
+                    <div class="doctor-details">
+                        <p><strong>Specialty:</strong> Diagnostic Medicine</p>
+                        <p><strong>Address:</strong> Princeton-Plainsboro Teaching Hospital.</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> ghhouse@ppth.edu</p>
+                    </div>
+                </div>
+                <a class="view-doctor-button" href="doctor_example.html">View Profile</a>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-info">
+                    <div class="doctor-main-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <div class="match-score">Match: 88%</div>
+                    </div>
+                    <div class="doctor-details">
+                        <p><strong>Specialty:</strong> Gastroenterology</p>
+                        <p><strong>Address:</strong> 456 Health Plaza, Floor 3, Cambridge, MA</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> mchen@digestivehealth.org</p>
+                    </div>
+                </div>
+                <a class="view-doctor-button" href="doctor_example.html">View Profile</a>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-info">
+                    <div class="doctor-main-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <div class="match-score">Match: 82%</div>
+                    </div>
+                    <div class="doctor-details">
+                        <p><strong>Specialty:</strong> Family Medicine</p>
+                        <p><strong>Address:</strong> 789 Wellness Ave, Brookline, MA</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> erodriguez@familycare.com</p>
+                    </div>
+                </div>
+                <a class="view-doctor-button" href="doctor_example.html">View Profile</a>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

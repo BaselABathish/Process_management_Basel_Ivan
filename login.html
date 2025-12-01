@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>MedConnect</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-$END$
+
+<header>
+    <h1 class="logo">MedConnect</h1>
+</header>
+
+<form class="login_form">
+    <input type="email" placeholder="Email" name="email" class="hidden_until_register">
+    <input type="text" placeholder="Username" name="username">
+    <input type="password" placeholder="Password" name="password">
+    <input type="password" placeholder="Confirm password" name="confirm_password" class="hidden_until_register">
+    <a class = "submit_button" href="symptoms.html">Login</a>
+    <a href="#" id="register_button">Register</a>
+    <a href="#">Forget password?</a>
+
+</form>
+
+<script>
+
+    hidden = document.getElementsByClassName('hidden_until_register');
+
+    register = document.getElementById('register_button');
+    let regval = 0
+    register.addEventListener('click', function (e) {
+        e.preventDefault();
+        register.innerText = regval ? 'Register' : 'I already have an account';
+        for (let h of hidden){
+            h.style.display = regval? 'none' : 'block';
+
+        }
+        regval = regval ? 0 : 1;
+
+
+
+
+    })
+</script>
+
 </body>
 </html>

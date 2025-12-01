@@ -8,40 +8,40 @@
 </head>
 <body>
 <header class="header">
-    <nav class="nav">
-        <div class="logo">MedConnect</div>
+    <div class="logo">MedConnect</div>
+    <nav>
         <ul class="nav-links">
             <li><a href="account.html" class="nav-link">My Account</a></li>
             <li><a href="symptoms.html" class="nav-link">Describe Symptoms</a></li>
-            <li><a href="doctors.html" class="nav-link">Find Doctors</a></li>
         </ul>
     </nav>
+    <a href="index.html" class="logout">Logout</a>
 </header>
 
 <main class="main-content">
-    <section class="page">
-        <div class="page-header">
-            <h1>My Account</h1>
+    <div class="page-header">
+        <h1>My Account</h1>
+        <p>Manage your personal information and account settings.</p>
+    </div>
+
+    <div class="doctor-profile">
+        <ul class="info-group">
+            <li><strong>Name:</strong> <span>John Doe</span></li>
+            <li><strong>Email:</strong> <span>john.doe@gmail.com</span></li>
+            <li><strong>Phone Number:</strong> <span>123-456-7890</span></li>
+            <li><strong>Insurance:</strong> <span>ÖGK</span></li>
+        </ul>
+    </div>
+
+    <h3>Appointments</h3>
+    <div class="pending_appointments">
+        <div class="appointment">
+            <h3>Dr. House</h3>
+            <h5>13/2/2026</h5>
+
+
         </div>
-        <div class="account-info">
-            <div class="info-card">
-                <div class="info-label">Name:</div>
-                <div class="info-value">John Doe</div>
-            </div>
-            <div class="info-card">
-                <div class="info-label">Email:</div>
-                <div class="info-value">john.doe@example.com</div>
-            </div>
-            <div class="info-card">
-                <div class="info-label">Phone:</div>
-                <div class="info-value">(555) 123-4567</div>
-            </div>
-            <div class="info-card">
-                <div class="info-label">Insurance:</div>
-                <div class="info-value">Blue Cross Blue Shield</div>
-            </div>
-        </div>
-    </section>
+    </div>
 </main>
 </body>
 </html>
