@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedConnect - Dr. Gregory House</title>
+    <title>MedConnect - Dr. Albert Schmidt</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,60 +21,60 @@
 <main class="main-content">
     <div class="doctor-profile">
         <div class="doctor-header">
-            <div class="doctor-avatar">
-                <img src="https://via.placeholder.com/150" alt="Dr. Gregory House">
-            </div>
-            <div class="doctor-intro">
-                <h1>Dr. Gregory House</h1>
-                <p class="specialty">Diagnostic Medicine, Nephrology, Infectious Disease</p>
-                <div class="match-badge">95% Match</div>
+            <div class="step">
+                <h1>Dr. Albert Schmidt</h1>
             </div>
         </div>
 
         <div class="doctor-details-section">
-            <h2>About Dr. House</h2>
-            <p>Dr. Gregory House is a world-renowned diagnostic genius and the Head of Diagnostic Medicine at Princeton-Plainsboro Teaching Hospital.</p>
-
-            <div class="info-group">
+            <div class="step">
+            <h2>About Dr. Schmidt</h2>
+            <p>Dr. Albert Schmidt is a world-renowned medical genius.</p>
+            </div>
+            <br>
+            <div class="step">
                 <h3>Contact Information</h3>
                 <div class="contact-info">
-                    <p><strong>Address:</strong> Department of Diagnostic Medicine, Princeton-Plainsboro Teaching Hospital, 1 Hospital Drive, Princeton, NJ 08540</p>
-                    <p><strong>Phone:</strong> (609) 555-0100</p>
-                    <p><strong>Email:</strong> ghhouse@ppth.edu</p>
+                    <p><strong>Address:</strong>Währinger Gürtel 18-20, 1090 Wien</p>
+                    <p><strong>Phone:</strong> +43 0987654321</p>
+                    <p><strong>Email:</strong> as@gmail.com</p>
                 </div>
             </div>
-
-            <div class="info-group">
+            <br>
+            <div class="step">
                 <h3>Education & Credentials</h3>
                 <ul>
-                    <li>MD, Johns Hopkins University School of Medicine</li>
-                    <li>Residency in Internal Medicine, Johns Hopkins Hospital</li>
-                    <li>Fellowship in Nephrology and Infectious Disease</li>
-                    <li>Board Certified in Diagnostic Medicine</li>
+                    <li>Medical University of Vienna - Doctor of Medicine (MD)</li>
+                    <li>Medical University of Vienna - Residency in Internal Medicine</li>
+                    <li>Medical University of Vienna - Fellowship in Immunology</li>
+                    <li>Board Certified in Internal Medicine</li>
+                    <li>Board Certified in Clinical Immunology</li>
                 </ul>
             </div>
 
-            <div class="info-group">
+            <br>
+
+            <div class="step">
                 <h3>Clinic & Office Hours</h3>
                 <ul>
                     <li>Monday - Friday: 9:00 - 20:00</li>
                 </ul>
             </div>
         </div>
+        <br>
 
-        <div>
-        <label for="appointment_date">Preferred appointment date</label>
-        <input type="date" id="appointment_date" name="appointment_date">
-        </div>
 
-        <div class="appointment-section">
-            <button onclick="a()">Request appointment</button>
+        <div class="step">
+            <label for="appointment_date">Preferred appointment date</label>
+            <input type="date" id="appointment_date" name="appointment_date" style="width: fit-content;">
+            <a class="view-doctor-button" href="message_on_platform.html">Make appointment</a>
+
         </div>
 </main>
 
 <script>
     function a(){
-        const msg = `You've requested an appointment with Dr. Gregory House on ${document.getElementById('appointment_date').value}`
+        const msg = `You've requested an appointment with Dr. Albert Schmidt on ${document.getElementById('appointment_date').value}`
         alert(msg)
     }
 

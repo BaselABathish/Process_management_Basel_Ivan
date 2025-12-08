@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Dr. Michael Chen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo"><a href="index.html">MedConnect</a></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="account.html" class="nav-link">My Account</a></li>
+            <li><a href="symptoms.html" class="nav-link">Describe Symptoms</a></li>
+        </ul>
+    </nav>
+    <a href="index.html" class="logout">Logout</a>
+</header>
+
+<main class="main-content">
+    <div class="doctor-profile">
+        <div class="doctor-header">
+            <div class="step">
+                <h1>Dr. Michael Chen</h1>
+            </div>
+        </div>
+
+        <div class="doctor-details-section">
+            <div class="step">
+            <h2>About Dr. Chen</h2>
+            <p>Dr. Michael Chen is a world renowned immunologist.</p>
+        </div>
+            <br>
+            <div class="step">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><strong>Address:</strong>Dr. Chen (private practice). Reichsratsstraße 7/11, 1010 Wien.</p>
+                    <p><strong>Phone:</strong> +43 1234567890</p>
+                    <p><strong>Email:</strong> mchen@drchen.com</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <label for="appointment_date">Preferred appointment date</label>
+                <input type="date" id="appointment_date" name="appointment_date" style="width: fit-content;">
+                <a class="view-doctor-button" href="mailto:mchen@drchen.com?subject=Appointment%20Request&body=Dear%20Dr.%20Chen%0A%0AI%20am%20writing%20to%20book%20an%20appointment%20with%20you%20on%20%5BDATE%5D%20regarding%20these%20symptoms%3A%0A%0A1.%20Bleeding%0A2.%20Pain%0A3.%20Broken%20bones%0A4.%20Trouble%20sleeping%0A%0AKind%20regards%0A%0A%5BNAME%5D%0A%0A%0A(Note%3A%20the%20symptoms%20above%20were%20extracted%20by%20MedConnect%20AI)">Send email</a>
+
+            </div>
+
+
+</div>
+
+</main>
+
+<script>
+    document.getElementById("appointment_date").addEventListener('change', function() {
+        document.querySelector('.view-doctor-button').href =
+            `mailto:mchen@drchen.com?subject=Appointment%20Request&body=Dear%20Dr.%20Chen%0A%0AI%20am%20writing%20to%20book%20an%20appointment%20with%20you%20on%20${encodeURIComponent(this.value)}%20regarding%20these%20symptoms%3A%0A%0A1.%20Bleeding%0A2.%20Pain%0A3.%20Broken%20bones%0A4.%20Trouble%20sleeping%0A%0AKind%20regards%0A%0A%5BNAME%5D%0A%0A%0A(Note%3A%20the%20symptoms%20above%20were%20extracted%20by%20MedConnect%20AI)`;
+    });
+
+</script>
+
+</body>
+</html>
