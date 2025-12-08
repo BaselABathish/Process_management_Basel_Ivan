@@ -19,13 +19,15 @@
 </header>
 
 <main class="main-content">
-    <div class="page-header">
+    <br>
+    <div class="step">
         <h1>My Account</h1>
         <p>Manage your personal information and account settings.</p>
     </div>
+    <br>
 
-    <div class="doctor-profile">
-        <ul class="info-group">
+    <div class="step">
+        <ul class="info-group" style="list-style-type: none;">
             <li><strong>Name:</strong> <span>John Doe</span></li>
             <li><strong>Email:</strong> <span>john.doe@gmail.com</span></li>
             <li><strong>Phone Number:</strong> <span>123-456-7890</span></li>
@@ -33,21 +35,95 @@
         </ul>
     </div>
 
-    <h3>Appointments</h3>
-    <div class="pending_appointments">
-        <div class="appointment">
-            <h3>Dr. House</h3>
-            <h5>13/2/2026</h5>
+    <br>
+    <div class="step">
+        <h3>Appointments</h3>
+
+        <div class="appointment" id = "apt1">
+            <h3>Dr. Schmidt: 13/1/2026</h3>
+            <input type="checkbox">
+            <div class="collapsible-content">
+                <h3>Appointment</h3>
+
+                <h4>Symptoms</h4>
+                    <ul style="list-style-type: none;">
+                        <li>Pain</li>
+                        <li>Fever</li>
+                        <li>Vomiting</li>
+                    <br>
+                        <h4>Cancellation</h4>
+                    </ul>
+                        <div class = "cancellation">
+                            <textarea rows="4" cols="50" placeholder="Reason for cancellation..." style="resize: none"></textarea>
+                            <button class="view-doctor-button" onclick="del_item('apt1')">Cancel</button>
+                        </div>
+
+
+
+            </div>
+
         </div>
-        <div class="appointment">
-            <h3>Dr. Smith</h3>
-            <h5>13/5/2026</h5>
+
+        <div class="appointment" id = "apt2">
+            <h3>Dr. Müller: 26/2/2026</h3>
+            <input type="checkbox">
+            <div class="collapsible-content">
+                <h3>Appointment</h3>
+
+                <h4>Symptoms</h4>
+                <ul style="list-style-type: none;">
+                    <li>Pain</li>
+                    <li>Fever</li>
+                    <li>Vomiting</li>
+                    <br>
+                    <h4>Cancellation</h4>
+                </ul>
+                <div class = "cancellation">
+                    <textarea rows="4" cols="50" placeholder="Reason for cancellation..." style="resize: none"></textarea>
+                    <button class="view-doctor-button" onclick="del_item('apt2')">Cancel</button>
+                </div>
+
+
+
+            </div>
+
         </div>
-        <div class="appointment">
-            <h3>Dr. Johnson</h3>
-            <h5>13/8/2026</h5>
+
+        <div class="appointment" id = "apt3">
+            <h3>Dr. Johnson: 13/3/2026</h3>
+            <input type="checkbox">
+            <div class="collapsible-content">
+                <h3>Appointment</h3>
+
+                <h4>Symptoms</h4>
+                <ul style="list-style-type: none;">
+                    <li>Pain</li>
+                    <li>Fever</li>
+                    <li>Vomiting</li>
+                    <br>
+                    <h4>Cancellation</h4>
+                </ul>
+                <div class = "cancellation">
+                    <textarea rows="4" cols="50" placeholder="Reason for cancellation..." style="resize: none"></textarea>
+                    <button class="view-doctor-button" onclick="del_item('apt3')">Cancel</button>
+                </div>
+
+
+
+            </div>
+
         </div>
     </div>
+
 </main>
+
+<script>
+    function del_item(id){
+        var item = document.getElementById(id);
+        item.remove();
+        alert("Deleted appointment");
+    }
+</script>
+
 </body>
 </html>
