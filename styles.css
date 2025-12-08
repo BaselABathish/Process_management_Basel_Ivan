@@ -64,10 +64,6 @@ body {
     background-color: var(--dark);
 }
 
-.logout {
-
-
-}
 
 .symptoms-container {
     width: 100%;
@@ -118,14 +114,6 @@ body {
 }
 
 
-.main-content {
-}
-
-.page-header {
-}
-
-.results {
-}
 
 .doctor-card {
     display: flex;
@@ -168,11 +156,6 @@ body {
     background-color: var(--primary);
 }
 
-
-
-.hero-section {
-}
-
 .main-page-login-button {
     background-color: var(--primary-dark);
     color: white;
@@ -186,9 +169,6 @@ body {
     background-color: var(--primary);
 
  }
-
-.how-it-works {
-}
 
 .steps-container {
     display: flex;
@@ -204,38 +184,6 @@ body {
     box-shadow: 1px 1px 5px gray;
 }
 
-.step-number {
-}
-
-.doctor-profile {
-}
-
-.doctor-header {
-}
-
-.doctor-avatar {
-}
-
-.doctor-intro {
-}
-
-.specialty {
-}
-
-.match-badge {
-}
-
-.doctor-details-section {
-}
-
-.info-group {
-}
-
-.contact-info {
-}
-
-.appointment-section {
-}
 
 .login_form {
 
@@ -255,11 +203,30 @@ body {
     color: white;
 }
 
-#register_button {
-}
 
 .pending_appointments {
 }
 
 .appointment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.collapsible-content {
+    width: 50%;
+    display: none;
+}
+
+input:checked + .collapsible-content {
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--dark);
+
+}
+.cancellation {
+    display: flex;
+
 }
